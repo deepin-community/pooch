@@ -1,4 +1,9 @@
-#!/usr/bin/make -f
+#! /usr/bin/make -f
+
+# export DH_VERBOSE=1
+
+export PYBUILD_NAME=pooch
+export PYBUILD_DISABLE=test
 
 %:
-	dh $@
+	dh $@ --buildsystem=pybuild
