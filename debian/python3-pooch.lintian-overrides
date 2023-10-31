@@ -1,0 +1,8 @@
+# duplicate compressed files are provided on purpos as data files for the test suite
+compressed-duplicate [usr/lib/python3/dist-packages/pooch/tests/data/*]
+# .txt files are erroneously assumed to be documentation files,
+# they are data files part of the test suite instead
+package-contains-documentation-outside-usr-share-doc [usr/lib/python3/dist-packages/pooch/tests/data/*]
+
+# false positive
+package-contains-documentation-outside-usr-share-doc [usr/lib/python3/dist-packages/pooch-*.*-info/*]

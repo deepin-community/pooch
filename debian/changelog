@@ -1,5 +1,69 @@
-template-repository (1.0-1) unstable; urgency=medium
+pooch (1.8.0-1) unstable; urgency=medium
 
-  * Initial release
+  [ Bas Couwenberg ]
+  * Team upload.
+  * Remove generated files in clean target.
+  * Enable Salsa CI.
+  * Switch to dh-sequence-*.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Antonio Valentino ]
+  * New upstream release.
+  * debian/control:
+    - Use <!nocheck> marker.
+    - Switch to autopkgtest-pkg-pybuild.
+    - Add build-dependency on python3-pytest-httpserver.
+  * Update debian/python3-pooch.lintian-overrides.
+
+ -- Antonio Valentino <antonio.valentino@tiscali.it>  Sat, 28 Oct 2023 09:32:08 +0000
+
+pooch (1.7.0-1) unstable; urgency=medium
+
+  [ Bas Couwenberg ]
+  * Bump Standards-Version to 4.6.2, no changes.
+
+  [ Antonio Valentino ]
+  * New upstream release.
+  * debian/control:
+    - updated dependencies (appdirs replaced by platformdirs).
+  * debian/copyright:
+    - update copyright dates.
+  * Update filenames in d/python3-pooch.docs.
+  * Bump debhelper-compat version to 13.
+
+ -- Antonio Valentino <antonio.valentino@tiscali.it>  Sun, 11 Jun 2023 16:48:22 +0200
+
+pooch (1.6.0-2) unstable; urgency=medium
+
+  [ Bas Couwenberg ]
+  * Bump Standards-Version to 4.6.1, no changes.
+
+  [ Antonio Valentino ]
+  * Fix d/copyright formatting.
+  * Update lintian overrides.
+
+ -- Antonio Valentino <antonio.valentino@tiscali.it>  Sat, 15 Oct 2022 13:53:39 +0000
+
+pooch (1.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - build depend on pybuild-plugin-pyproject.
+  * Update d/copyright.
+
+ -- Antonio Valentino <antonio.valentino@tiscali.it>  Tue, 25 Jan 2022 08:04:41 +0000
+
+pooch (1.5.2-1) unstable; urgency=medium
+
+  [ Bas Couwenberg ]
+  * Bump Standards-Version to 4.6.0, no changes.
+
+  [ Antonio Valentino ]
+  * New upstream release.
+
+ -- Antonio Valentino <antonio.valentino@tiscali.it>  Sat, 06 Nov 2021 14:08:16 +0000
+
+pooch (1.4.0-1) unstable; urgency=low
+
+  * Initial version (Closes: #987897).
+
+ -- Antonio Valentino <antonio.valentino@tiscali.it>  Sat, 21 Aug 2021 07:47:58 +0000
